@@ -15,10 +15,8 @@ jobs:
                 python-version: ${{ matrix.python-version }}
                 cache: pip
 
-            - name: Install dependencies
-              run: |
-                pip install -r requirements.txt
+            
 
             - name: Run Testcases
               run: |
-                test_scientific_calculator.py
+                python test_scientific_calculator.py
