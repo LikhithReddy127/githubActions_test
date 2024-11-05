@@ -1,0 +1,14 @@
+name: Testing out testcases
+run-name: Testing testcases
+
+on: [push]
+
+jobs:
+    trail-python-run:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Run Testcases
+              run: |
+                test_scientific_calculator.py
